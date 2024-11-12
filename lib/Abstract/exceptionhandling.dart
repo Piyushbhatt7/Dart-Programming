@@ -6,15 +6,34 @@
 
 // 3 I/O EXCEPTION 
 
+// class Test{
+//   div(){
+//     int x = 5~/0;
+//     print(x);
+//   }
+// }
+
+// void main()
+// {
+//   Test obj = Test();
+//   obj.div();
+// }
+
 class Test{
   div(){
-    int x = 5~/0;
-    print(x);
+    try{
+      int x = 5~/0;
+      print(x);
+    }
+    on IntegerDivisionByZeroException
+    {
+      print("This Number cannot be Divided by 0");
+    }
   }
 }
 
 void main()
 {
-  Test obj = Test();
-  obj.div();
+  Test object = Test();
+  object.div();
 }
