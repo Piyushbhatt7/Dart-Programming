@@ -1,3 +1,5 @@
+
+
 class A{
   var name;
   void set Cusset(String name) // set method
@@ -5,5 +7,14 @@ class A{
     this.name = name;
   }
 
-  String
+  String get Cusset{
+    return name;
+  }
+}
+
+void main()
+{
+  A obj = A();
+  obj.Cusset = "Rahul";
+  print(obj.Cusset);
 }
