@@ -2,7 +2,7 @@ import 'dart:io';
 
 class Triangle{
 
-  void up(int n)
+  void down(int n)
   {
     for(int i=n;i>=1;i--)
     {
@@ -19,7 +19,7 @@ class Triangle{
     }
   }
 
-  void down(int n)
+  void up(int n)
   {
     for(int i=1;i<=n;i++)
     {
