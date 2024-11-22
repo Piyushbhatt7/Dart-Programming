@@ -1,3 +1,6 @@
+// Dart Programming dosen't support the Polymorphism
+// Here is a example that functon loading showing error
+
 class Poly{
   
   fun()
